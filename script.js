@@ -45,11 +45,37 @@ const observer = new IntersectionObserver(
 );
 counters.forEach((c) => observer.observe(c));
 
-// Formulario de contacto (demo — sin backend)
+// Formulario de contacto — envío real vía FormSubmit (AJAX)
 function handleSubmit(e) {
   e.preventDefault();
+  const form = e.target;
   const note = document.getElementById('formNote');
-  note.hidden = false;
-  e.target.reset();
+  const btn = form.querySelector('button[type="submit"]');
+  const originalText = btn.textContent;
+  btn.disabled = true;
+  btn.textContent = 'Enviando...';
+
+  fetch('https://formsubmit.co/ajax/fundacionhapi@gmail.com', {
+    method: 'POST',
+    headers: { Accept: 'application/json' },
+    body: new FormData(form),
+  })
+    .then((res) => res.json())
+    .then(() => {
+      note.hidden = false;
+      note.style.color = '';
+      note.textContent = '¡Gracias! Hemos recibido tu mensaje y te contactaremos pronto.';
+      form.reset();
+    })
+    .catch(() => {
+      note.hidden = false;
+      note.style.color = '#b23a3a';
+      note.textContent = 'Hubo un problema al enviar. Escríbenos directo a fundacionhapi@gmail.com';
+    })
+    .finally(() => {
+      btn.disabled = false;
+      btn.textContent = originalText;
+    });
+
   return false;
 }

@@ -258,7 +258,10 @@
       </div>
 
       <div class="contact-grid">
-        <form class="contact-form" onsubmit="return handleSubmit(event)">
+        <form class="contact-form" id="contactForm" action="https://formsubmit.co/fundacionhapi@gmail.com" method="POST" onsubmit="return handleSubmit(event)">
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde fundacionhapi.com" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input type="hidden" name="_template" value="table" />
           <div class="field">
             <label for="nombre">Nombre completo</label>
             <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
@@ -294,9 +297,7 @@
           <div class="info-block">
             <h3>Síguenos</h3>
             <div class="social">
-              <a href="#" aria-label="Facebook">Facebook</a>
-              <a href="#" aria-label="Instagram">Instagram</a>
-              <a href="#" aria-label="LinkedIn">LinkedIn</a>
+              <a href="https://www.instagram.com/inversionesfinted" target="_blank" rel="noopener" aria-label="Instagram">Instagram</a>
             </div>
           </div>
           <div class="info-block info-transparency">
@@ -319,11 +320,11 @@
       </div>
 
       <div class="allies-row">
-        <div class="ally">
+        <a class="ally" href="https://www.instagram.com/inversionesfinted" target="_blank" rel="noopener">
           <div class="ally-logo"><img src="assets/finted.jpeg" alt="Inversiones Finted" /></div>
           <span class="ally-name">Inversiones Finted</span>
           <span class="ally-role">Inversión y sostenibilidad financiera</span>
-        </div>
+        </a>
         <div class="ally">
           <div class="ally-logo"><img src="assets/dilubio.jpeg" alt="Dilubio Producciones" /></div>
           <span class="ally-name">Dilubio Producciones</span>
