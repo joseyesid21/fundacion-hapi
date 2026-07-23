@@ -88,10 +88,9 @@ h3 { font-size: 1.25rem; }
 .hero-badges strong { font-family: var(--serif); font-size: 1.9rem; color: var(--navy); }
 .hero-badges span { font-size: 0.85rem; color: var(--muted); }
 .hero-logo-card {
-  background: #fff; border-radius: 28px; padding: 40px; box-shadow: var(--shadow);
-  border: 1px solid rgba(28,58,94,0.06); transform: rotate(-1.5deg);
+  background: transparent; padding: 20px; display: grid; place-items: center;
 }
-.hero-logo-card img { border-radius: 16px; }
+.hero-logo-card img { max-width: 100%; width: auto; }
 
 /* ===== Secciones ===== */
 .section { padding: clamp(56px, 8vw, 104px) 0; }
