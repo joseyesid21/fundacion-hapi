@@ -88,9 +88,9 @@ h3 { font-size: 1.25rem; }
 .hero-badges strong { font-family: var(--serif); font-size: 1.9rem; color: var(--navy); }
 .hero-badges span { font-size: 0.85rem; color: var(--muted); }
 .hero-logo-card {
-  background: transparent; padding: 20px; display: grid; place-items: center;
+  background: transparent; padding: 10px; display: grid; place-items: center;
 }
-.hero-logo-card img { max-width: 100%; width: auto; }
+.hero-logo-card img { width: 118%; max-width: 118%; height: auto; }
 
 /* ===== Secciones ===== */
 .section { padding: clamp(56px, 8vw, 104px) 0; }
@@ -201,6 +201,7 @@ h3 { font-size: 1.25rem; }
 @media (max-width: 900px) {
   .hero-inner { grid-template-columns: 1fr; }
   .hero-visual { order: -1; max-width: 380px; }
+  .hero-logo-card img { width: 100%; max-width: 100%; }
   .mv-grid, .lines-grid, .metrics, .testimonials, .participate-grid { grid-template-columns: 1fr 1fr; }
   .contact-grid { grid-template-columns: 1fr; }
 }
