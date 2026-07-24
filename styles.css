@@ -212,6 +212,18 @@ h3 { font-size: 1.25rem; }
 .info-transparency { background: #fff; padding: 24px; border-radius: var(--radius); box-shadow: var(--shadow-sm); }
 .link-gold { color: var(--gold); font-weight: 600; }
 
+/* ===== Página legal ===== */
+.legal { max-width: 820px; margin: 0 auto; }
+.legal-title { font-size: clamp(1.8rem, 4vw, 2.6rem); margin: 8px 0 20px; }
+.legal-draft { background: rgba(184,137,78,0.10); border: 1px dashed rgba(184,137,78,0.5); border-radius: var(--radius-sm); padding: 14px 16px; color: var(--ink); font-size: 0.92rem; }
+.legal-updated { color: var(--muted); font-size: 0.85rem; margin: 14px 0 30px; }
+.legal h2 { font-size: 1.25rem; margin: 30px 0 10px; }
+.legal p { color: var(--ink); margin-bottom: 12px; }
+.legal ul { margin: 0 0 16px 20px; color: var(--ink); }
+.legal li { margin-bottom: 8px; }
+.legal strong { color: var(--navy); }
+.legal-back { margin-top: 34px; }
+
 /* ===== Footer ===== */
 .site-footer { background: var(--navy-deep); color: #fff; padding-top: 56px; }
 .footer-inner { display: flex; justify-content: space-between; gap: 40px; flex-wrap: wrap; padding-bottom: 40px; }
@@ -222,6 +234,8 @@ h3 { font-size: 1.25rem; }
 .footer-links a:hover { color: var(--gold-light); }
 .footer-bottom { border-top: 1px solid rgba(255,255,255,0.1); padding: 22px 0; }
 .footer-bottom p { color: rgba(255,255,255,0.6); font-size: 0.88rem; text-align: center; }
+.footer-policy { color: rgba(255,255,255,0.75); text-decoration: underline; }
+.footer-policy:hover { color: var(--gold-light); }
 
 /* ===== Responsive ===== */
 @media (max-width: 900px) {
