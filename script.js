@@ -45,6 +45,16 @@ const observer = new IntersectionObserver(
 );
 counters.forEach((c) => observer.observe(c));
 
+// Logo del encabezado: siempre lleva al inicio visual absoluto de la página.
+const brandTop = document.getElementById('brandTop');
+if (brandTop) {
+  brandTop.addEventListener('click', (e) => {
+    e.preventDefault();
+    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+    history.replaceState(null, '', location.pathname + location.search);
+  });
+}
+
 // Consentimiento de datos: el botón se habilita solo cuando la casilla está marcada.
 // (Mientras la casilla siga "disabled" en el HTML, el botón permanece bloqueado.)
 const acepto = document.getElementById('acepto');
