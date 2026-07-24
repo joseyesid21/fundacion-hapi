@@ -318,7 +318,14 @@
             <label for="mensaje">Mensaje</label>
             <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Cuéntanos cómo quieres participar..."></textarea>
           </div>
-          <button type="submit" class="btn btn-navy btn-block">Enviar mensaje</button>
+          <div class="field consent">
+            <label class="consent-label">
+              <input type="checkbox" id="acepto" name="acepto" disabled />
+              <span>He leído y acepto la Política de Tratamiento de Datos Personales.</span>
+            </label>
+          </div>
+          <button type="submit" id="submitBtn" class="btn btn-navy btn-block" disabled>Enviar mensaje</button>
+          <p class="policy-pending">⏳ El envío del formulario se habilitará una vez publiquemos nuestra Política de Tratamiento de Datos Personales, actualmente en revisión jurídica. Mientras tanto, escríbenos directamente a <a href="mailto:fundacionhapi@gmail.com" class="link-gold">fundacionhapi@gmail.com</a>.</p>
           <p class="form-note" id="formNote" hidden>¡Gracias! Hemos recibido tu mensaje y te contactaremos pronto.</p>
         </form>
 

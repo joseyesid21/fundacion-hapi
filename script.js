@@ -45,6 +45,16 @@ const observer = new IntersectionObserver(
 );
 counters.forEach((c) => observer.observe(c));
 
+// Consentimiento de datos: el botón se habilita solo cuando la casilla está marcada.
+// (Mientras la casilla siga "disabled" en el HTML, el botón permanece bloqueado.)
+const acepto = document.getElementById('acepto');
+const submitBtn = document.getElementById('submitBtn');
+if (acepto && submitBtn) {
+  acepto.addEventListener('change', () => {
+    submitBtn.disabled = !acepto.checked;
+  });
+}
+
 // Formulario de contacto — envío real vía FormSubmit (AJAX)
 function handleSubmit(e) {
   e.preventDefault();
