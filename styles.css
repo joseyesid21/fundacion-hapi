@@ -62,6 +62,9 @@ h3 { font-size: 1.25rem; }
 .btn-outline-light:hover { background: rgba(255,255,255,0.1); border-color: #fff; }
 .btn-outline-gold { background: transparent; color: var(--gold); border-color: var(--gold); }
 .btn-outline-gold:hover { background: rgba(184,137,78,0.1); border-color: var(--gold-light); color: var(--gold-light); }
+.btn-whatsapp { background: #25d366; color: #fff; margin-top: 14px; }
+.btn-whatsapp:hover { background: #1ebe5b; box-shadow: var(--shadow-sm); }
+.wa-icon { font-size: 1.1rem; }
 
 /* ===== Header ===== */
 .site-header {
