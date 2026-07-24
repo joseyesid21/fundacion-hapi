@@ -60,6 +60,8 @@ h3 { font-size: 1.25rem; }
 .btn-gold:hover { background: var(--gold-light); box-shadow: var(--shadow-sm); }
 .btn-outline-light { background: transparent; color: #fff; border-color: rgba(255,255,255,0.5); }
 .btn-outline-light:hover { background: rgba(255,255,255,0.1); border-color: #fff; }
+.btn-outline-gold { background: transparent; color: var(--gold); border-color: var(--gold); }
+.btn-outline-gold:hover { background: rgba(184,137,78,0.1); border-color: var(--gold-light); color: var(--gold-light); }
 
 /* ===== Header ===== */
 .site-header {
