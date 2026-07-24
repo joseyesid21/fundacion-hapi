@@ -130,6 +130,16 @@ h3 { font-size: 1.25rem; }
 .line-tags { list-style: none; display: flex; flex-wrap: wrap; gap: 8px; }
 .line-tags li { background: var(--cream); color: var(--navy); font-size: 0.8rem; font-weight: 500; padding: 6px 12px; border-radius: 999px; }
 
+/* Capacidad jurídica/financiera */
+.capacity { margin-top: 48px; }
+.capacity-head { text-align: center; margin-bottom: 26px; }
+.capacity-head h3 { font-size: 1.4rem; }
+.capacity-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; }
+.capacity-card { background: #fff; border-radius: var(--radius); padding: 28px 30px; box-shadow: var(--shadow-sm); border-left: 4px solid var(--gold); }
+.capacity-card p { color: var(--muted); }
+.capacity-card strong { color: var(--navy); }
+@media (max-width: 640px) { .capacity-grid { grid-template-columns: 1fr; } }
+
 /* ===== Métricas ===== */
 .metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-bottom: 60px; }
 .metric { text-align: center; padding: 30px 16px; background: #fff; border-radius: var(--radius); box-shadow: var(--shadow-sm); }
