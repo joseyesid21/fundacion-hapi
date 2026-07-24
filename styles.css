@@ -119,6 +119,7 @@ h3 { font-size: 1.25rem; }
 
 /* ===== Líneas de acción ===== */
 .lines-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 26px; }
+.lines-grid-2 { grid-template-columns: repeat(2, 1fr); max-width: 900px; margin: 0 auto; }
 .line-card {
   background: #fff; border-radius: var(--radius); padding: 38px 30px;
   border: 1px solid rgba(28,58,94,0.06); box-shadow: var(--shadow-sm);
@@ -135,10 +136,13 @@ h3 { font-size: 1.25rem; }
 .capacity-head { text-align: center; margin-bottom: 26px; }
 .capacity-head h3 { font-size: 1.4rem; }
 .capacity-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; }
-.capacity-card { background: #fff; border-radius: var(--radius); padding: 28px 30px; box-shadow: var(--shadow-sm); border-left: 4px solid var(--gold); }
-.capacity-card p { color: var(--muted); }
+.capacity-grid-4 { grid-template-columns: repeat(4, 1fr); max-width: 1100px; }
+.capacity-card { background: #fff; border-radius: var(--radius); padding: 28px 26px; box-shadow: var(--shadow-sm); border-left: 4px solid var(--gold); }
+.capacity-card h4 { font-family: var(--serif); color: var(--navy); font-size: 1.05rem; margin-bottom: 8px; }
+.capacity-card p { color: var(--muted); font-size: 0.95rem; }
 .capacity-card strong { color: var(--navy); }
-@media (max-width: 640px) { .capacity-grid { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .lines-grid-2, .capacity-grid-4 { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 640px) { .capacity-grid, .lines-grid-2, .capacity-grid-4 { grid-template-columns: 1fr; } }
 
 /* ===== Métricas ===== */
 .metrics { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-bottom: 60px; }
